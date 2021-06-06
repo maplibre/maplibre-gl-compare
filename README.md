@@ -233,24 +233,41 @@ compare.on('slideend', (e) => {
 compare.remove();
 ```
 
-
 ## Live examples
 
 [Compare hybrid with streets](https://rawcdn.githack.com/astridx/astridx.github.io/a9d7297a4fe1e3a4d7ebeb1e4e662fd1339ef3b5/maplibreexamples/plugins/maplibre-gl-compare-swipe-between-maps.html)
 
 [Compare swisstopo with demotiles](https://rawcdn.githack.com/astridx/astridx.github.io/a9d7297a4fe1e3a4d7ebeb1e4e662fd1339ef3b5/maplibreexamples/plugins/maplibre-gl-compare-swipe-between-maps_.html)
 
-
 ## Installation
+
+### Native
+
+Add tags referencing `maplibre-gl-compare` after adding `maplibre-gl` to your website:
+
+```html
+<!-- MapLibre GL -->
+<link href="https://unpkg.com/maplibre-gl@1.14.0/dist/maplibre-gl.css" rel='stylesheet' />
+<link href="maplibre-gl-compare.css" rel='stylesheet' />
+
+<script src="https://unpkg.com/maplibre-gl@1.14.0/dist/maplibre-gl.js"></script>
+<script src="maplibre-gl-compare.js"></script>
+```
+
+### Node 
+
 
 
 ## Motivation
 
+This project makes it possible to easily compare two maps.
 
 ## API Reference
+
 [API Reference](API.md)
 
 ## Bug Reports & Feature Requests
+
 Please use the [issue tracker](https://github.com/maplibre/maplibre-gl-compare/issues) to report any bugs or file feature requests.
 
 ## Licence
