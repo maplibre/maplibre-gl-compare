@@ -1,0 +1,46 @@
+{
+  "name": "maplibre-gl-compare",
+  "version": "0.5.0",
+  "description": "Swipe and sync between two Maplibre maps",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "start": "cp style.css example/style.css && budo example/index.js --serve example/bundle.js --dir example --live",
+    "build": "cp style.css dist/maplibre-gl-compare.css && NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/maplibre-gl-compare.js",
+    "test": "npm run lint && browserify -t envify test/index.js | smokestack -b firefox | tap-status",
+    "lint": "eslint --no-eslintrc -c .eslintrc index.js example/index.js test/index.js",
+    "docs": "documentation build index.js --format=md > API.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maplibre/maplibre-gl-compare.git"
+  },
+  "keywords": [
+    "maplibre",
+    "maplibregl",
+    "maps",
+    "gl",
+    "ui"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "budo": "^11.6.4",
+    "documentation": "^13.2.5",
+    "envify": "^4.1.0",
+    "eslint": "^7.28.0",
+    "maplibre-gl": "^1.14.0",
+    "smokestack": "^3.6.0",
+    "tap-status": "^1.0.1",
+    "tape": "^5.2.2",
+    "uglify-js": "^3.13.9"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-gl-sync-move": "^0.3.0"
+  },
+  "peerDependencies": {
+    "maplibre-gl": ">=1.14.0"
+  }
+}
