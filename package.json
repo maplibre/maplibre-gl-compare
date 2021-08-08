@@ -1,5 +1,5 @@
 {
-  "name": "maplibre-gl-compare",
+  "name": "@maplibre/maplibre-gl-compare",
   "version": "0.5.0",
   "description": "Swipe and sync between two Maplibre maps",
   "main": "index.js",
