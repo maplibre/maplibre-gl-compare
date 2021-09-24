@@ -213,7 +213,7 @@ var map = new maplibregl.Compare(beforeMap, afterMap, container, {
 ### Methods
 
 ```js
-compare = new mapboxgl.Compare(beforeMap, afterMap, container, {
+compare = new maplibregl.Compare(beforeMap, afterMap, container, {
   mousemove: true, // Optional. Set to true to enable swiping during cursor movement.
   orientation: 'vertical' // Optional. Sets the orientation of swiper to horizontal or vertical, defaults to vertical
 });
