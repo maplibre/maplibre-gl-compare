@@ -11,7 +11,8 @@
     "build": "cp style.css dist/maplibre-gl-compare.css && NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/maplibre-gl-compare.js",
     "test": "npm run lint && browserify -t envify test/index.js | smokestack -b firefox | tap-status",
     "lint": "eslint --no-eslintrc -c .eslintrc index.js example/index.js test/index.js",
-    "docs": "documentation build index.js --format=md > API.md"
+    "docs": "documentation build index.js --format=md > API.md",
+    "prettier": "prettier --write index.js test/index.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "envify": "^4.1.0",
     "eslint": "^8.9.0",
     "maplibre-gl": "^2.1.6",
+    "prettier": "2.5.1",
     "smokestack": "^3.6.0",
     "tap-status": "^1.0.1",
     "tape": "^5.5.2",
