@@ -19,9 +19,9 @@ Swipe and sync between two MapLibre maps. This plugin was originally developed f
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
     <script src="../.env"></script>
-    <script src="https://unpkg.com/maplibre-gl@1.14.0-rc.1/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.js"></script>
     <link
-      href="https://unpkg.com/maplibre-gl@1.14.0-rc.1/dist/maplibre-gl.css"
+      href="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.css"
       rel="stylesheet"
     />
     <style>
@@ -107,9 +107,9 @@ Swipe and sync between two MapLibre maps. This plugin was originally developed f
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
     <script src="../.env"></script>
-    <script src="https://unpkg.com/maplibre-gl@1.14.0-rc.1/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.js"></script>
     <link
-      href="https://unpkg.com/maplibre-gl@1.14.0-rc.1/dist/maplibre-gl.css"
+      href="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.css"
       rel="stylesheet"
     />
     <style>
@@ -247,10 +247,10 @@ Add tags referencing `maplibre-gl-compare` after adding `maplibre-gl` to your we
 
 ```html
 <!-- MapLibre GL -->
-<link href="https://unpkg.com/maplibre-gl@1.14.0/dist/maplibre-gl.css" rel='stylesheet' />
+<link href="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.css" rel='stylesheet' />
 <link href="maplibre-gl-compare.css" rel='stylesheet' />
 
-<script src="https://unpkg.com/maplibre-gl@1.14.0/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.js"></script>
 <script src="maplibre-gl-compare.js"></script>
 ```
 
