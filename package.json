@@ -2,6 +2,7 @@
   "name": "@maplibre/maplibre-gl-compare",
   "version": "0.6.0-dev",
   "description": "Swipe and sync between two MapLibre maps",
+  "funding": "https://github.com/maplibre/maplibre-gl-js?sponsor=1",
   "main": "index.js",
   "directories": {
     "example": "example"
