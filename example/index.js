@@ -2,14 +2,18 @@
 
 require("../");
 
+// 'Before' style from https://github.com/lukasmartinelli/naturalearthtiles
 var before = new maplibregl.Map({
   container: "before",
-  style: "https://demotiles.maplibre.org/style.json",
+  style: "https://raw.githubusercontent.com/lukasmartinelli/naturalearthtiles/gh-pages/maps/natural_earth.vector.json",
+  zoom: 2
 });
 
+// 'After' style from https://github.com/maplibre/demotiles
 var after = new maplibregl.Map({
   container: "after",
   style: "https://demotiles.maplibre.org/style.json",
+  zoom: 2
 });
 
 // Use either of these patterns to select a container for the compare widget
